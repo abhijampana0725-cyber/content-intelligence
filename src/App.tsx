@@ -6,6 +6,10 @@ import Dashboard from './pages/Dashboard'
 import TopPerformers from './pages/TopPerformers'
 import Strategist from './pages/Strategist'
 import Connect from './pages/Connect'
+import Privacy from './pages/Privacy'
+import Terms from './pages/Terms'
+import Terms from './pages/Terms'
+import Privacy from './pages/Privacy'
 
 export type Video = {
   id: string
@@ -124,6 +128,8 @@ export default function App() {
             <Route path="/dashboard" element={<Dashboard videos={videos} />} />
             <Route path="/top-performers" element={<TopPerformers videos={videos} />} />
             <Route path="/strategist" element={<Strategist videos={videos} />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/privacy" element={<Privacy />} />
           </Routes>
         </main>
       </div>
